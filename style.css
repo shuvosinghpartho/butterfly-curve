@@ -32,6 +32,27 @@ body {
     max-width: 200px;
 }
 
+#signature {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    color: #aaa;
+    font-size: 0.9rem;
+    font-family: 'Courier New', Courier, monospace;
+    z-index: 2;
+    opacity: 0.7;
+    pointer-events: none; /* prevents it from blocking clicks */
+}
+
+@media (max-width: 480px) {
+    #signature {
+        font-size: 0.75rem;
+        bottom: 0.5rem;
+        right: 0.5rem;
+    }
+}
+
+
 /* Responsive typography and UI for small devices */
 @media (max-width: 480px) {
     #Info {
